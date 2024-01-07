@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Icecream Delights</title>
+    <link rel="shorcut icon" href="logo.webp">
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#project">Flavors</a></li>
+          <li><a href="#contact">Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <h1>Icecream Delights</h1>
+      <p>Coming to Icecream Delights is like coming home, a place to find warmth and to create memories with loved ones. We take pride in being able to provide simple creature comforts for our patrons to enjoy. 
+
+        As such, our most important values are serving quality, no-fuss desserts efficiently, at all times. We serve 100% dairy ice creams. 
+        
+             At Icecream Delights we strive to make your day.</p>
+     
+    </section>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Let's begin with every ingredient we work with.Sources from the finest possible sources,we travel that extra mile to get you real flavour.
+        
+        We're taking fresh strawberries from Mahabaleshwar,Paan from Calcutta and Vannila from Tahiti.
+        
+        It might sound unbelievable,but the next taste of this icecream will have you screaming 'IT'S REAL'</p>
+      <a href="#project" class="button-lrn">Learn more</a>
+    </section>
+    <section id="project">
+      <h2>Flavors</h2>
+      <div class="grid">
+        <div class="item">
+         
+          <h3>Butterscotch</h3>
+          <p>  The flavor butterscotch is used in a variety of desserts as a base ingredient or flavour, including ice-cream, puddings, fudge, sauces, cakes and icing.</p>
+        </div>
+        <div class="item">
+          
+          <h3>Double Chocolate</h3>
+          <p> The intense chocolate aroma that wafts from freshly baked double chocolate products is irresistible and adds an extra layer of anticipation and delight.</p>
+        </div>
+        <div class="item">
+         
+          <h3>Dark Choco Fantasy</h3>
+          <p>Explore the world of exquisite dark chocolate varieties, each with its unique flavor profile, ranging from fruity and floral to earthy and slightly bitter, providing a multisensory journey for chocolate connoisseurs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact </h2>
+        <form onsubmit="alert('Thank you for your message!'); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+        
+   
+  </body>
+</html>
+<footer>
+  <p>&copy; <span id="currentYear"></span>Icecream Delights</p>
+</footer>
+
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
+</script>
+<footer>
+  <p>&copy; <span id="currentYear"></span>Icecream Delights</p>
+</footer>
+<style>
+  footer {
+    background-color: rgb(8, 13, 35);
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+</style>
